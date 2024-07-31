@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    emailjs.init('zg0Cl1cRPipXUX-gq');
+  </script>
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">My Portfolio</a>
+    <i class="fas fa-bars" id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#qualifications">Qualifications</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Conatact</a>
+      <button id="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+    </button>
+    </nav>
+  </header>
+  
+<!-- Home -->
+
+  <section id="home" class="home">
+    <div class="home-content">
+        <h3>Hii</h3>
+        <h1>My self Kriti Omar</h1>
+        <h3>And i am a <span>Web Developer</span></h3>
+        <p>Passionate about building robust software solutions that solve real-world problems. Experienced in designing and implementing scalable applications with a focus on performance and user experience. Dedicated to continuous learning and staying updated with the latest technologies.</p>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/kriti-omar-77555422b/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/KritiOmar20" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <a href="https://drive.google.com/file/d/1MthDyAbxyIZi2ZbFVwIL8XX24eEmXoGJ/view" class='btn'>Download CV</a>
+    </div>
+     
+    <div class="home-img">
+        <img class="home-pic" src="images\my img.png" alt="Profile Picture">
+    </div>
+  </section>
+
+
+<!-- About -->
+<section class="about" id="about">
+  <div class="about-content">
+      <h2 class="heading">About <span>Me</span></h2>
+      <h3>Software Developer</h3>
+      <p>
+          Hello! I'm Kriti Omar, a passionate Software Developer with a robust foundation in building scalable and efficient software solutions. With a Master’s degree in Computer Applications and hands-on experience at Nagarro, I excel in delivering high-quality projects.
+      </p>
+      <p>
+          My technical expertise spans various programming languages and frameworks, including JavaScript, React, Node.js, and Python. I thrive in full-stack development, creating both client-side and server-side components of web applications.
+      </p>
+      <p>
+          I am committed to continuous learning and staying updated with the latest industry trends and technologies. My approach emphasizes clean, maintainable code and collaborative teamwork to deliver impactful software solutions.
+      </p>
+      <p>
+        I have been recognized for my skills and contributions through various certifications and achievements:
+    </p>
+      <a href="#" class="btn" id="read-more-btn">Read more</a>
+      <div class="more-content" id="more-content" style="display: none;">
+          <h3>Achievements</h3>
+          <p>
+              I have been recognized for my skills and contributions through various certifications and achievements:
+          </p>
+          <ul>
+              <li>Certified in Python+Security by Axpino Technologies</li>
+              <li>The Web Developer Bootcamp 2023 by Udemy</li>
+              <li>SQL for Data Analytics by Udemy</li>
+              <li>GitHub Basics by Udemy</li>
+              <li>Innovative India Coding Certificate (AICTE) by CODING NINJAS</li>
+              <li>Participant in Virtusa's "Engineering Equity Hackathon"</li>
+              <li>Participant in "CodeClash" organized by IEEE TEMS, VIT-Vellore</li>
+              <li>Participant in Coding Ninjas "Codekaze" and gained AIR : 1044, College Specefic Rank : 22</li>
+              <li>Successfully competed in PSIT's annual Tech-Fest "Tech-Expo"</li>
+              <li>Many more......</li>
+          </ul>
+          <h3>Personal Interests</h3>
+          <p>
+              Outside of work, I have a variety of interests that keep me engaged and inspired:
+          </p>
+          <ul>
+              <li>
+                  <strong>Open Source Contributions:</strong> Contributing to open-source projects allows me to collaborate with other developers and give back to the community.
+              </li>
+              <li>
+                <strong>Learning New Technologies:</strong> I enjoy exploring new programming languages and frameworks to expand my knowledge and keep up with industry advancements.
+            </li>
+              <li>
+                  <strong>Coding Challenges:</strong> Platforms like LeetCode and HackerRank are my go-to for honing my problem-solving skills and staying sharp.
+              </li>
+          </ul>
+          <p>
+              I'm always open to new opportunities and collaborations. Feel free to reach out if you'd like to connect or discuss potential projects.
+          </p>
+      </div>
+  </div>
+</section>
+
+
+
+<!-- Qualifications -->
+
+<section class="qualifications" id="qualifications">
+    <h2 class="heading">My <span>Qualifications</span></h2>
+    <h4 class="subtitle">Experience & Qualification</h4>
+    <div class="qualification-container container grid section-border">
+        <div class="qualification-content">
+            <h3 class="qualification-title">
+                <i class="fas fa-pencil-ruler"></i>  Education
+            </h3>
+            <div class="qualification-info">
+                <div>
+                    <h4 class="qualification-name">
+                        Master of Computer applications
+                    </h4>
+                    <p class="qualification-country" >Pranveer Singh Institute of Technology</p>
+                    <p class="qualification-year" >2021-2023</p>
+                    <p class="qualification-CGPA" >8.395 CGPA</p>
+                </div>
+
+                <div>
+                    <h3 class="qualification-name">
+                        Bachelor of Computer Application
+                    </h3>
+                    <p class="qualification-country" >Dr Virendra swarup Institute of Computer Studies</p>
+                    <p class="qualification-year" >2017-2020</p>
+                    <p class="qualification-CGPA" >68.08 %</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="qualification-content">
+            <h3 class="qualification-title">
+                <i class="fas fa-building"></i>  Work Experience
+            </h3>
+            <div class="qualification-info">
+                <div>
+                    <h4 class="qualification-name">
+                        Trainee
+                    </h4>
+                    <p class="qualification-country" >Nagarro</p>
+                    <p class="qualification-year">Mar23-July23</p>
+                    <p>During my tenure as a trainee at Nagarro Software Pvt. Ltd. I gained hands-on experience in Dotnet Technology.
+                        Under the guidance of People Enablement team, I contributed to projects, showcasing satisfactory performance
+                        and acquiring valuable insights into software development practices
+                        </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="" alt="">
+</section>
+
+<!-- Expertise -->
+
+  <section class="expertise" id="expertise">
+    <h2 class="heading">My <span>Expertise</span></h2>
+    <div class="expertise-container">
+        <div class="expertise-box">
+            <i class="fas fa-code"></i>
+            <h3>Web Development</h3>
+            <p>With expertise in modern web technologies, I build responsive and user-friendly websites. From frontend development using HTML, CSS, and JavaScript to backend solutions with Node.js and databases, I ensure seamless performance and robust functionality. My goal is to create engaging digital experiences that drive success.
+            </p>
+            <a href="#" class="btn">Read more</a>
+        </div>
+
+        <div class="expertise-box">
+            <i class="fas fa-palette"></i>
+            <h3>Ui/Ux Designiner</h3>
+            <p>As a UI/UX designer, I focus on creating intuitive and visually appealing interfaces that enhance user satisfaction. By leveraging design principles and user research, I craft experiences that are not only beautiful but also functional and easy to navigate. My designs aim to improve usability and engagement for every user.
+            </p>
+            <a href="#" class="btn">Read more</a>
+        </div>
+
+        <div class="expertise-box">
+            <i class="fab fa-android"></i>
+            <h3>App Developer</h3>
+            <p>I create robust and intuitive mobile applications for both iOS and Android platforms. My focus is on delivering high-performance apps that provide an excellent user experience and meet your business needs. From concept to deployment, I ensure every app is designed to delight users and drive engagement.
+            </p>
+            <a href="#" class="btn">Read more</a>
+        </div>
+        
+    </div> 
+  </section>
+
+<!-- Projects -->
+
+<section class="projects" id="projects">
+    <h2>My <span>Projects</span></h2>
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+        <li data-target="#carousel" data-slide-to="3"></li>
+        <li data-target="#carousel" data-slide-to="4"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="project-box">
+            <img src="images/img1.jpg" alt="CMS">
+            <div class="project-layer">
+              <h4>Content Management System</h4>
+              <p>Basic implementation of a headless CMS with CRUD</p>
+              <a href="https://github.com/KritiOmar20/CMS-with-CRUD-and-SQL" target="_blank" class="project-btn">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="project-box">
+            <img src="images/amazClone.jpg" alt="Application Design">
+            <div class="project-layer">
+              <h4>AmazClone</h4>
+              <p>Clone of Amazon Web page</p>
+              <a href="https://github.com/KritiOmar20/AmazClone" target="_blank" class="project-btn">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="project-box">
+            <img src="images/Agriculture.jpg" alt="Project 3">
+            <div class="project-layer">
+              <h4>Indian Agriculture Dataset Analytics</h4>
+              <p>TypeScript-based analytics application</p>
+              <a href="https://github.com/KritiOmar20/Indian-Agriculture-Data-Analysis" target="_blank" class="project-btn">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+            <div class="project-box">
+              <img src="images/social-media.png" alt="Project 5">
+              <div class="project-layer">
+                <h4>Social-Media-Application</h4>
+                <p>Simple social media platform using MERN Stack</p>
+                <a href="https://github.com/KritiOmar20/Social_Media" target="_blank" class="project-btn">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="project-box">
+              <img src="images/Quiz-App.png" alt="Project 5">
+              <div class="project-layer">
+                <h4>Quiz_App</h4>
+                <p>Basic quiz app using React js</p>
+                <a href="https://github.com/KritiOmar20/Quiz_App" target="_blank" class="project-btn">View Project</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Contact -->
+
+<section class="contact" id="contact">
+  <h2 class="heading">Contact <span>Me</span></h2>
+  <form action="#" id="contact-form">
+      <div class="input-box">
+          <input type="text" name="name" id="name" placeholder="Your Name" required>
+          <input type="email" name="email" id="email" placeholder="Your Email" required>
+      </div>
+      <div class="input-box">
+          <input type="number" name="phone" placeholder="Mobile Number" required>
+          <input type="text" name="subject" placeholder="Email Subject" required>
+      </div>
+      <div>
+          <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+          <input type="submit" value="Send Message" class="btn">
+      </div>
+      <div>
+          <p>Get in touch with me at <a href="mailto:kritiomar20@gmail.com">kritiomar20@gmail.com</a>.</p>
+      </div>
+  </form>
+</section>
+
+
+<!-- Footer -->
+
+  <footer class="footer">
+    <div class="footer-text">
+        <p>Copyright &copy; 2024 My Portfolio</p>  
+    </div>
+    <div class="footer-iconTop">
+        <a href="#home" class="back-to-top">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+  </footer>
+
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+  <!-- <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script> -->
+  <script src="scripts/main.js"></script>
+
+
+  
+</body>
+</html>
