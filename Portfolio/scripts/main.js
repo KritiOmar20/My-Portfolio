@@ -56,19 +56,35 @@ window.addEventListener('scroll', () => {
 
 //about read more
 
-document.getElementById("read-more-btn").addEventListener("click", function(event) {
-  event.preventDefault();
+document.addEventListener("DOMContentLoaded", function() {
+  var readMoreBtn = document.getElementById("read-more-btn");
+  var readLessBtn = document.getElementById("read-less-btn");
   var moreContent = document.getElementById("more-content");
-  moreContent.style.display = "block";
-  this.style.display = "none";
+
+  // Log the elements to ensure they are correctly selected
+  console.log("Read More Button:", readMoreBtn);
+  console.log("Read Less Button:", readLessBtn);
+  console.log("More Content:", moreContent);
+
+  if (readMoreBtn && readLessBtn && moreContent) {
+    readMoreBtn.addEventListener("click", function(event) {
+      event.preventDefault();
+      moreContent.style.display = "block";
+      readMoreBtn.style.display = "none";
+      console.log("Read More Button clicked, showing more content.");
+    });
+
+    readLessBtn.addEventListener("click", function(event) {
+      event.preventDefault();
+      moreContent.style.display = "none";
+      readMoreBtn.style.display = "block";
+      console.log("Read Less Button clicked, hiding more content.");
+    });
+  } else {
+    console.error("One or more elements not found:", { readMoreBtn, readLessBtn, moreContent });
+  }
 });
 
-document.getElementById("read-less-btn").addEventListener("click", function(event) {
-  event.preventDefault();
-  var moreContent = document.getElementById("more-content");
-  moreContent.style.display = "none";
-  document.getElementById("read-more-btn").style.display = "block";
-});
 
 
 // Add event listener to the menu icon

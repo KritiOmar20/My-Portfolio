@@ -52,6 +52,10 @@ section {
     cursor: default;
 }
 
+.logo:hover{
+    color: #5c04af;
+}
+
 .navbar {
     display: flex;
     align-items: center;
@@ -62,11 +66,12 @@ section {
     color: #fff;
     margin-left: 4rem;
     transition: color 0.3s ease;
+    margin-right: 1rem;
 }
 
 .navbar a:hover,
 .navbar a.active {
-    color: #0077b5;
+    color: #a647ff;
 }
 
 .navbar.active{
@@ -139,7 +144,7 @@ body.dark-theme button#theme-toggle {
 }
 
 span {
-    color: #0077b5;
+    color: #a647ff;
 }
 
 .home-content h1 {
@@ -190,27 +195,27 @@ span {
     width: 4rem;
     height: 4rem;
     background: transparent;
-    border: 0.2rem solid #0077b5;
+    border: 0.2rem solid #a647ff;
     border-radius: 50%;
     font-size: 2rem;
-    color: #0077b5;
+    color: #a647ff;
     margin: 1.5rem;
     transition: 0.5s ease;
 }
 
 .social-media a:hover {
-    background-color: #0077b5;
+    background-color: #a647ff;
     color: #fff; 
-    box-shadow: 0 0 1rem #0077b5;
+    box-shadow: 0 0 1rem #a647ff;
 }
 
 .btn {
     margin: 1rem;
     display: inline-block;
     padding: 1rem 2.8rem;
-    background-color: #0077b5;
+    background-color: #a647ff;
     border-radius: 4rem;
-    box-shadow: 0 0 1rem #0077b5;
+    box-shadow: 0 0 1rem #a647ff;
     font-size: 1.6rem;
     color: #fff;
     letter-spacing: 0.1rem;
@@ -220,6 +225,7 @@ span {
 
 .btn:hover {
     box-shadow: none;
+    color: #fff;
 }
 
 /* Dark Theme Styles */
@@ -262,6 +268,23 @@ body.dark-theme .btn:hover {
 
 body.dark-theme .home-img img {
     border: 2px solid #fff;
+}
+
+body.dark-theme .social-media a{
+    border: 0.2rem solid #0077b5;
+    color: #0077b5;
+}
+
+body.dark-theme .social-media a:hover{
+    background-color: #0077b5;
+    color: #fff; 
+    box-shadow: 0 0 1rem #0077b5;
+}
+
+body.dark-theme .btn{
+    background-color: #0077b5;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem #0077b5;
 }
 
  
@@ -327,7 +350,7 @@ body.dark-theme .home-img img {
 }
 
 .about-content h2 span {
-    color: #0077b5; 
+    color: #a647ff; 
 }
 
 .about-content h3 {
@@ -348,7 +371,7 @@ body.dark-theme .home-img img {
 .about-content .btn {
     display: inline-block;
     padding: 1rem 2.8rem;
-    background-color: #0077b5;
+    background-color: #a647ff;
     border-radius: 4rem;
     font-size: 1.6rem;
     color: #fff;
@@ -358,7 +381,7 @@ body.dark-theme .home-img img {
 }
 
 .about-content .btn:hover {
-    background-color: #005b9f; 
+    background-color: #5c04af; 
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2); 
 }
 
@@ -403,7 +426,7 @@ body.dark-theme .about-content .btn:hover {
     text-align: center;
     margin-bottom: 20px;
     font-size: 2em;
-    color: #007bff;
+    color: #a647ff;
 }
 .qualifications .subtitle {
     text-align: center;
@@ -437,12 +460,12 @@ body.dark-theme .about-content .btn:hover {
 .qualification-title i{
     font-size: 1.4rem;
     margin-right: 10px;
-    color: #007bff;
+    color: #a647ff;
 }
 .qualification-name {
     font-size: 1.2em;
     font-weight: bold;
-    color: #007bff;
+    color: #a647ff;
     margin-bottom: 5px;
 }
 .qualifiaction-info{
@@ -519,7 +542,7 @@ body.dark-theme .qualification-CGPA {
 }
 
 .heading span {
-    color: #0077b5; 
+    color: #a647ff; 
 }
 
 .expertise-container {
@@ -542,7 +565,7 @@ body.dark-theme .qualification-CGPA {
 
 .expertise-box i {
     font-size: 4rem;
-    color: #0077b5; 
+    color: #a647ff; 
     margin-bottom: 1rem; 
 }
 
@@ -558,7 +581,7 @@ body.dark-theme .qualification-CGPA {
 }
 
 .expertise-box .btn {
-    background-color: #0077b5;
+    background-color: #a647ff;
     color: #fff;
     padding: 0.8rem 2rem;
     border-radius: 2rem;
@@ -569,7 +592,7 @@ body.dark-theme .qualification-CGPA {
 }
 
 .expertise-box .btn:hover {
-    background-color: #005b9f; 
+    background-color: #5c04af; 
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2); /
 }
 
@@ -623,7 +646,7 @@ body.dark-theme .expertise-box .btn:hover {
 }
 
 .projects h2 span {
-    color: #0077b5;
+    color: #a647ff;
 }
 
 .carousel {
@@ -632,7 +655,8 @@ body.dark-theme .expertise-box .btn:hover {
 }
 
 .carousel-indicators li {
-    background-color: #007bff;
+    margin-top: 1rem;
+    background-color: #a647ff;
 }
 
 .carousel-inner {
@@ -689,7 +713,7 @@ body.dark-theme .expertise-box .btn:hover {
     display: inline-block;
     padding: 10px 20px;
     margin-top: 15px;
-    background-color: #007bff;
+    background-color: #a647ff;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -697,7 +721,8 @@ body.dark-theme .expertise-box .btn:hover {
 }
 
 .project-btn:hover {
-    background-color: #0056b3;
+    background-color: #5c04af;
+    color: #fff;
 }
 
 /* Dark Theme Styles */
@@ -754,7 +779,7 @@ body.dark-theme .project-btn:hover {
 }
 
 .contact .heading span {
-    color: #0077b5;
+    color: #a647ff;
 }
 
 .contact form {
@@ -787,7 +812,7 @@ body.dark-theme .project-btn:hover {
 
 .contact .input-box input:focus,
 .contact textarea:focus {
-    border-color: #007bff;
+    border-color: #a647ff;
     outline: none;
 }
 
@@ -798,7 +823,7 @@ body.dark-theme .project-btn:hover {
 .contact .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #a647ff;
     color: #fff;
     text-decoration: none;
     border: none;
@@ -809,7 +834,7 @@ body.dark-theme .project-btn:hover {
 }
 
 .contact .btn:hover {
-    background-color: #0056b3;
+    background-color: #5c04af;
 }
 
 .contact p {
@@ -820,7 +845,7 @@ body.dark-theme .project-btn:hover {
 }
 
 .contact p a {
-    color: #007bff;
+    color: #a647ff;
     text-decoration: none;
 }
 
@@ -903,7 +928,7 @@ body.dark-theme .contact p a {
 .footer-iconTop .back-to-top {
     display: inline-block;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #a647ff;
     color: #fff;
     border-radius: 50%;
     text-decoration: none;
@@ -911,7 +936,7 @@ body.dark-theme .contact p a {
 }
 
 .footer-iconTop .back-to-top:hover {
-    background-color: #0056b3;
+    background-color: #5c04af;
 }
 
 .footer-iconTop .back-to-top i {
