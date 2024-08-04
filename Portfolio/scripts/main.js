@@ -61,6 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var readLessBtn = document.getElementById("read-less-btn");
   var moreContent = document.getElementById("more-content");
 
+
   // Log the elements to ensure they are correctly selected
   console.log("Read More Button:", readMoreBtn);
   console.log("Read Less Button:", readLessBtn);
@@ -86,6 +87,31 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+
+  // Log the elements to ensure they are correctly selected
+  console.log("Read More Button:", readMoreBtn);
+  console.log("Read Less Button:", readLessBtn);
+  console.log("More Content:", moreContent);
+// >>>>>>> 231fb6981b744a85087c0b48fe5a0ec51f0e7193
+
+  if (readMoreBtn && readLessBtn && moreContent) {
+    readMoreBtn.addEventListener("click", function(event) {
+      event.preventDefault();
+      moreContent.style.display = "block";
+      readMoreBtn.style.display = "none";
+      console.log("Read More Button clicked, showing more content.");
+    });
+
+    readLessBtn.addEventListener("click", function(event) {
+      event.preventDefault();
+      moreContent.style.display = "none";
+      readMoreBtn.style.display = "block";
+      console.log("Read Less Button clicked, hiding more content.");
+    });
+  } else {
+    console.error("One or more elements not found:", { readMoreBtn, readLessBtn, moreContent });
+  }
+});
 
 // Add event listener to the menu icon
 document.getElementById('menu-icon').addEventListener('click', () => {
