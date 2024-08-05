@@ -1,11 +1,5 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "api/send-email.js",
-      "use": "@vercel/node"
-    }
-  ],
   "env": {
     "EMAILJS_SERVICE_ID": "service_5guffxx",
     "EMAILJS_TEMPLATE_ID": "template_6hcl8g7",
