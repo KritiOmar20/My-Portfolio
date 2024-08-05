@@ -1,5 +1,8 @@
 {
   "version": 2,
+  "rewrites": [
+    {"source": "/(.*)", "destination": "/"}
+  ],
   "env": {
     "EMAILJS_SERVICE_ID": "service_5guffxx",
     "EMAILJS_TEMPLATE_ID": "template_6hcl8g7",
