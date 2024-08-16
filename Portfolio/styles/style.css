@@ -627,10 +627,8 @@ body.dark-theme .expertise-box .btn {
 body.dark-theme .expertise-box .btn:hover {
     background-color: #357ab8; 
 }
-
-
 /* Project */
-  .projects {
+.projects {
     padding: 40px 20px;
     background-color: #f9f9f9;
     color: #333;
@@ -762,7 +760,6 @@ body.dark-theme .project-btn {
 body.dark-theme .project-btn:hover {
     background-color: #357ab8;
 }
-
 /* Contact */
 .contact {
     padding: 40px 20px;

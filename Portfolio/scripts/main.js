@@ -116,6 +116,7 @@ carouselIndicators.forEach((indicator, index) => {
   });
 });
 
+
 // Add event listener to the contact form submit button
 document.getElementById('contact-form').addEventListener('submit', (e) => {
   e.preventDefault();
